@@ -1,6 +1,7 @@
-import firebase from 'firebase'
+import firebase from 'firebase/app'
+import 'firebase/auth'
 
-if(!firebase.app.length){
+if(!firebase.apps.length){
   firebase.initializeApp({
     apiKey: "AIzaSyBLjhvXVNGtzON58CLLbZ9-G2jopxLj7Bo",
     authDomain: "task-wiz-2e118.firebaseapp.com",
