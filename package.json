@@ -1,0 +1,20 @@
+{
+  "name": "task-wiz",
+  "version": "1.0.0",
+  "description": "my first nuxt project",
+  "author": "yamada masahiro",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/bulma": "^1.2.1",
+    "firebase": "^7.14.2",
+    "nuxt": "^2.0.0",
+    "vuex-persistedstate": "^3.0.1"
+  },
+  "devDependencies": {}
+}
