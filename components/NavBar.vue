@@ -46,7 +46,7 @@
       feature,
       contact
     },
-    data: () {
+    data: () => ({
       showNav: false,
       items: [
         {title: 'Home', icon: 'home', url: '/' },
