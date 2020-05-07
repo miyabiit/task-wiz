@@ -18,18 +18,32 @@
        </div>
      </header>
      <!-- body -->
+     <section class="container">
+       <div>
+         <logo/>
+         <h1 class="title">Nuxtapp</h1>
+         <div class="links">
+           <nuxt-link to="/testbulma" class="btn">bulmaテストページへ</nuxt-link>
+         </div>
+       </div>
+     </section>
    </div>
 </template>
 
 <script>
-  import firebase from "@/plugins/firebase";
+  import firebase from "@/plugins/firebase"
+  import Logo from '~/components/Logo.vue'
+  
   export default {
-   asyncData() {
-     return {
-       isWaiting: true,
-       isLogin: false,
-       user: []
-     };
+    components: {
+      Logo
+    },
+    asyncData() {
+      return {
+        isWaiting: true,
+        isLogin: false,
+        user: []
+      };
    },
    mounted: function() {
      firebase.auth().onAuthStateChanged(user => {
