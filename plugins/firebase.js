@@ -1,17 +1,16 @@
 import firebase from 'firebase/app'
 import 'firebase/auth'
+import config from '~/firebase.config'
 
 if(!firebase.apps.length){
-  firebase.initializeApp({
-    apiKey: "AIzaSyBLjhvXVNGtzON58CLLbZ9-G2jopxLj7Bo",
-    authDomain: "task-wiz-2e118.firebaseapp.com",
-    databaseURL: "https://task-wiz-2e118.firebaseio.com",
-    projectId: "task-wiz-2e118",
-    storageBucket: "task-wiz-2e118.appspot.com",
-    messagingSenderId: "1089569663599",
-    appId: "1:1089569663599:web:5e6e5246311ffd2cdabb9a",
-    measurementId: "G-5Z9FV06NMR"
-  })
+  firebase.initializeApp(config)
 }
 
-export default firebase
+export const authProviders = {
+  Email: firebase.auth.EmailAuthProvider.PROVIDER_ID,
+  Google: firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+  Facebook: firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+  Github: firebase.auth.GithubAuthProvider.PROVIDER_ID
+}
+
+export const auth = firebase.auth()

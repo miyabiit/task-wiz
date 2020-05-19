@@ -27,6 +27,7 @@ export default {
   ** Global CSS
   */
   css: [
+    "firebaseui/dist/firebaseui.css"
   ],
   /*
   ** Plugins to load before mounting the App
@@ -47,6 +48,9 @@ export default {
     '@nuxtjs/bulma',
     '@nuxtjs/font-awesome'
   ],
+  router: [
+    middleware: ['authenticated']
+  ]
   /*
   ** Build configuration
   */
