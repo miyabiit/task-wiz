@@ -14,7 +14,11 @@
     "@nuxtjs/bulma": "^1.2.1",
     "@nuxtjs/font-awesome": "^1.0.4",
     "firebase": "^7.14.2",
+    "firebaseui": "^4.5.0",
     "nuxt": "^2.0.0",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "pug-plain-loader": "^1.0.0",
     "vuex-persistedstate": "^3.0.1"
   },
   "devDependencies": {}

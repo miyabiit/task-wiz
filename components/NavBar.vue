@@ -2,7 +2,7 @@
   <nav class="navbar has-background-light">
     <div class="navbar-brand">
       <nuxt-link class="navbar-item" to="/">
-        <img src="https://bulma.io/images/bulma-log.png" alt="Bulma" width="112" height="28">
+        <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma" width="112" height="28">
       </nuxt-link>
       <div class="navbar-burger burger" data-target="nabvarMenu" @click="showNav = !showNav" :class="{'is-active': showNav}">
         <span></span>

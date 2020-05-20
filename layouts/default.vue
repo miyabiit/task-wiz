@@ -1,5 +1,6 @@
 <template>
   <div class="site">
+    <Header/>
     <nav-bar/>
     <div class="siteContent">
       <nuxt class="has-text-centered"/>
@@ -9,13 +10,15 @@
 </template>
 
 <script>
+  import Header from '~/components/Header.vue'
   import FooterBar from '~/components/FooterBar.vue'
   import NavBar from '~/components/NavBar.vue'
   
   export default {
     components: {
-      FooterBar,
-      NavBar
+      Header,
+      NavBar,
+      FooterBar
     }
   }
 </script>

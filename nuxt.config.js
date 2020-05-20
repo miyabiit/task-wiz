@@ -4,7 +4,8 @@ export default {
     port: 3000,
     host: '0.0.0.0'
   },
-  mode: 'universal',
+  //mode: 'universal',
+  mode: 'spa',
   /*
   ** Headers of the page
   */
@@ -48,9 +49,9 @@ export default {
     '@nuxtjs/bulma',
     '@nuxtjs/font-awesome'
   ],
-  router: [
-    middleware: ['authenticated']
-  ]
+  router: {
+    middleware: 'authenticated'
+  },
   /*
   ** Build configuration
   */

@@ -4,7 +4,7 @@
 
 <script>
   import FirebaseAuth from '@/components/FirebaseAuth'
-  import { mapstate, mapGetters, mapActions } from "vuex"
+  import { mapState, mapGetters, mapActions } from "vuex"
   
   export default {
     name: 'Login',
