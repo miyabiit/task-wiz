@@ -3,10 +3,10 @@ export const state = () => ({
 })
 
 export const mutations = {
-  toggleMenu (state) {
+  toggleMenu(state){
     state.isMenuActive = !state.isMenuActive
   },
-  resetMenu (state) {
+  resetMenu(state){
     state.isMenuActive = false
   }
 }

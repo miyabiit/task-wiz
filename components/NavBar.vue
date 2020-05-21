@@ -4,13 +4,13 @@
       <nuxt-link class="navbar-item" to="/">
         TASK-WIZ
       </nuxt-link>
-      <div class="navbar-burger burger" data-target="nabvarMenu" @click="showNav = !showNav" :class="{'is-active': showNav}">
+      <div class="navbar-burger burger" data-target="nabvarMenu" @click="$store.commit('toggleMenu')" :class="{'is-active': $store.state.isMenuActive}">
         <span></span>
         <span></span>
         <span></span>
       </div>
     </div>
-    <div id="navMenu" class="navbar-menu" :class="{'is-active': showNav}">
+    <div id="navMenu" class="navbar-menu" :class="{'is-active': $store.state.isMenuActive}">
       <div class="nav-end">
         <div class="nabar-item has-dropdown is-hoverable">
           <div class="navbar-dropdown is-boxed">
@@ -31,7 +31,6 @@
 
   export default {
     data: () => ({
-      showNav: false,
       items: [
         {title: 'Home', icon: 'home', url: '/' },
         {title: 'About', icon: 'code', url: '/about'},

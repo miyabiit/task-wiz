@@ -50,7 +50,8 @@ export default {
     '@nuxtjs/font-awesome'
   ],
   router: {
-    middleware: ['authenticated','resetMenu']
+    //middleware: ['authenticated','resetMenu']
+    middleware: ['authenticated']
   },
   /*
   ** Build configuration

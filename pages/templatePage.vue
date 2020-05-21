@@ -10,3 +10,11 @@
     </div>
   </section>
 </template>
+
+<script>
+  export default {
+    fetch ({store}){
+      store.commit('resetMenu')
+    }
+  }
+</script>

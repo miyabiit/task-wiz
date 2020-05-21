@@ -22,6 +22,9 @@
   import TestCard from '~/components/TestCard.vue'
 
   export default {
+    fetch ({store}){
+      store.commit('resetMenu')
+    },
     components: {
       TestCard
     },
