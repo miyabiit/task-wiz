@@ -11,15 +11,15 @@
       </div>
     </div>
     <div id="navMenu" class="navbar-menu" :class="{'is-active': $store.state.isMenuActive}">
-      <div class="navbar-start">
+      <div class="navbar-start" v-if="isLoggedIn">
         <nuxt-link v-for="item in items" :key="item.title" :to="item.url" class="navbar-item">
           {{item.title}}
         </nuxt-link>
       </div>
       <div class="nav-end">
-        <div class="nabar-item">
-          <a class="button is-light" v-if="isLoggedIn">{{username}}</a>
-          <a class="button is-primary" v-if="isLoggedIn" @click="logout">Logout</a>
+        <div class="nabar-item" v-if="isLoggedIn">
+          <a class="button is-light">{{username}}</a>
+          <a class="button is-primary" @click="logout">Logout</a>
         </div> 
       </div>
     </div>
