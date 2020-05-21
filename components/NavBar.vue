@@ -27,18 +27,9 @@
 </template>
 
 <script>
-  //import about from "~/pages/about.vue"
-  //import templatePage from "~/pages/templatePage.vue"
   import { mapState, mapGetters, mapActions } from "vuex"
 
   export default {
-  }
-  
-  export default {
-    components: {
-      about,
-      templatePage
-    },
     data: () => ({
       showNav: false,
       items: [
