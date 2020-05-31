@@ -18,8 +18,8 @@
             signInOptions: [
               authProviders.Email,
               authProviders.Google,
-              authProviders.Facebook,
-              authProviders.Github
+              //authProviders.Facebook,
+              //authProviders.Github
             ],
             callbacks: {
               // for cores error in dev server 
